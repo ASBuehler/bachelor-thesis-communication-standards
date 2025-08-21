@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+
+option java_package = "kketest.protomodel";
+option java_outer_classname = "DataObjectProto";
+
+
+message DataObjectMessage {
+  string payload = 1;
+}

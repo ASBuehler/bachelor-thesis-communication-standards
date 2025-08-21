@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<invoice>
+    <issueDate>2025-08-05</issueDate>
+    <billingAddress>
+        <postalCode>12345</postalCode>
+        <street>Test Str</street>
+    </billingAddress>
+    <lineItems/>
+    <notes>Notes with
+Line Breaks and € Symbol.</notes>
+    <companyLogo></companyLogo>
+</invoice>

@@ -1,0 +1,15 @@
+sqtest\proto\InvoiceProto$InvoiceLineItem$Builder.class
+sqtest\proto\InvoiceProto$PaymentStatus$1.class
+sqtest\proto\InvoiceProto$InvoiceLineItem.class
+sqtest\proto\InvoiceProto$Address$Builder.class
+sqtest\proto\InvoiceProto$AddressOrBuilder.class
+sqtest\proto\InvoiceProto.class
+sqtest\proto\InvoiceProto$PaymentStatus.class
+sqtest\proto\InvoiceProto$InvoiceLineItem$1.class
+sqtest\proto\InvoiceProto$InvoiceOrBuilder.class
+sqtest\proto\InvoiceProto$Invoice.class
+sqtest\proto\InvoiceProto$Invoice$1.class
+sqtest\proto\InvoiceProto$Address$1.class
+sqtest\proto\InvoiceProto$InvoiceLineItemOrBuilder.class
+sqtest\proto\InvoiceProto$Invoice$Builder.class
+sqtest\proto\InvoiceProto$Address.class

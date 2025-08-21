@@ -1,0 +1,198 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>test</groupId>
+    <artifactId>sq-test</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <properties>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <jackson.version>2.15.2</jackson.version>
+    </properties>
+
+    <dependencies>
+        <!-- ========== GRUNDLAGEN & UTILITIES (Unverändert) ========== -->
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-nop</artifactId>
+            <version>2.0.7</version>
+        </dependency>
+        <dependency>
+            <groupId>javax.annotation</groupId>
+            <artifactId>javax.annotation-api</artifactId>
+            <version>1.3.2</version>
+        </dependency>
+
+        <!-- ========== JACKSON CORE & DATENFORMATE (Unverändert) ========== -->
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>${jackson.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.dataformat</groupId>
+            <artifactId>jackson-dataformat-cbor</artifactId>
+            <version>${jackson.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.dataformat</groupId>
+            <artifactId>jackson-dataformat-yaml</artifactId>
+            <version>${jackson.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.msgpack</groupId>
+            <artifactId>jackson-dataformat-msgpack</artifactId>
+            <version>0.9.0</version>
+        </dependency>
+        <dependency>
+            <groupId>de.undercouch</groupId>
+            <artifactId>bson4jackson</artifactId>
+            <version>2.15.0</version>
+        </dependency>
+        <!-- WICHTIG: Modul für Java 8+ Zeit-Typen (LocalDate etc.), weiterhin benötigt -->
+        <dependency>
+            <groupId>com.fasterxml.jackson.datatype</groupId>
+            <artifactId>jackson-datatype-jsr310</artifactId>
+            <version>${jackson.version}</version>
+        </dependency>
+
+        <!-- ========== JAXB (XML) - (Unverändert) ========== -->
+        <dependency>
+            <groupId>jakarta.xml.bind</groupId>
+            <artifactId>jakarta.xml.bind-api</artifactId>
+            <version>4.0.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.glassfish.jaxb</groupId>
+            <artifactId>jaxb-runtime</artifactId>
+            <version>4.0.2</version>
+        </dependency>
+
+        <!-- ========== SCHEMA-BASIERTE FORMATE ========== -->
+        <dependency>
+            <groupId>com.google.protobuf</groupId>
+            <artifactId>protobuf-java</artifactId>
+            <version>3.25.1</version>
+        </dependency>
+        <!-- HINZUGEFÜGT: Wird für die Map-Unterstützung im neuen Protobuf-Schema benötigt -->
+        <dependency>
+            <groupId>com.google.protobuf</groupId>
+            <artifactId>protobuf-java-util</artifactId>
+            <version>3.25.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.avro</groupId>
+            <artifactId>avro</artifactId>
+            <version>1.11.3</version>
+        </dependency>
+
+        <!-- ========== ANDERE SERIALISIERUNGSFORMATE ========== -->
+        <dependency>
+            <groupId>com.moandjiezana.toml</groupId>
+            <artifactId>toml4j</artifactId>
+            <version>0.7.2</version>
+        </dependency>
+        
+        <!-- ENTFERNT: Thrift, INI und RDF werden im neuen Test nicht mehr verwendet -->
+        <!-- <dependency org.apache.thrift:libthrift ... /> -->
+        <!-- <dependency org.ini4j:ini4j ... /> -->
+        <!-- <dependency org.apache.jena:* ... /> -->
+
+    </dependencies>
+
+    <build>
+        <plugins>
+            <!-- Plugin zum Ausführen der Java-Anwendung (unverändert) -->
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>exec-maven-plugin</artifactId>
+                <version>3.2.0</version>
+                <configuration>
+                    <mainClass>sqtest.RecursiveNodeTestRunner</mainClass>
+                    <arguments>
+                        <argument>--add-opens=java.base/java.time=ALL-UNNAMED</argument>
+                    </arguments>
+                </configuration>
+            </plugin>
+
+            <!-- HINZUGEFÜGT: Dieses Plugin erkennt das Betriebssystem -->
+            <plugin>
+                <!-- KORREKTUR: Die groupId wurde von org.xolstice.maven.plugins zu kr.motd.maven geändert. -->
+                <groupId>kr.motd.maven</groupId>
+                <artifactId>os-maven-plugin</artifactId>
+                <version>1.7.1</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>detect</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            
+            <!-- Fügt generierte Quellen zum Build-Pfad hinzu (unverändert) -->
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>build-helper-maven-plugin</artifactId>
+                <version>3.5.0</version>
+                <executions>
+                    <execution>
+                        <id>add-source</id>
+                        <phase>generate-sources</phase>
+                        <goals>
+                            <goal>add-source</goal>
+                        </goals>
+                        <configuration>
+                            <sources>
+                                <source>${project.build.directory}/generated-sources/avro/</source>
+                                <source>${project.build.directory}/generated-sources/protobuf/java/</source>
+                            </sources>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+
+            <!-- Code-Generator für Avro (unverändert) -->
+            <plugin>
+                <groupId>org.apache.avro</groupId>
+                <artifactId>avro-maven-plugin</artifactId>
+                <version>1.11.3</version>
+                <executions>
+                    <execution>
+                        <phase>generate-sources</phase>
+                        <goals>
+                            <goal>schema</goal>
+                        </goals>
+                        <configuration>
+                            <sourceDirectory>${project.basedir}/src/main/avro/</sourceDirectory>
+                            <outputDirectory>${project.build.directory}/generated-sources/avro/</outputDirectory>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+
+            <!-- Code-Generator für Protobuf (unverändert zur letzten Version) -->
+            <plugin>
+                <groupId>org.xolstice.maven.plugins</groupId>
+                <artifactId>protobuf-maven-plugin</artifactId>
+                <version>0.6.1</version>
+                <configuration>
+                    <protocArtifact>com.google.protobuf:protoc:3.25.1:exe:${os.detected.classifier}</protocArtifact>
+                    <addGeneratedAnnotation>false</addGeneratedAnnotation>
+                </configuration>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>compile</goal>
+                            <goal>test-compile</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+</project>

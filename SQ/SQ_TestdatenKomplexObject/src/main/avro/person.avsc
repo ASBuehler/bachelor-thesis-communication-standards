@@ -1,0 +1,13 @@
+{
+  "namespace": "sqtest.avro",
+  "type": "record",
+  "name": "Person",
+  "fields": [
+    { "name": "name", "type": "string" },
+    { "name": "age", "type": "int" },
+    
+    // MINIMALE ÄNDERUNG: Erlaube "null" ODER "string" für das Feld.
+    // Der Default-Wert muss zum ersten Typ in der Union passen.
+    { "name": "email", "type": ["null", "string"], "default": null }
+  ]
+}

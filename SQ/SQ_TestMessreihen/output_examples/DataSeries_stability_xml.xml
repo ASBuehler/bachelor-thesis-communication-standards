@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><DataSeries><sensorId>Sensor-XYZ-ErrorCase-"Special'Chars"</sensorId><startTimestamp>-1</startTimestamp><values>1.0</values><values>-1.0</values><values>0.0</values><values>NaN</values><values>INF</values><values>-INF</values><values>1.7976931348623157E308</values><values>4.9E-324</values></DataSeries>

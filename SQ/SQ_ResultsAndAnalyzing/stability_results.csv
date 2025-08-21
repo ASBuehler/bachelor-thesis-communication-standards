@@ -1,0 +1,60 @@
+Testfall,Datenformat,Ergebnis,Grund
+"Person",JSON,Robust,Datenintegrität gewahrt
+"Person",XML,Robust,Datenintegrität gewahrt
+"Person",CSV,"Nicht Robust","Daten bei der Übertragung verändert"
+"Person",MessagePack,Robust,Datenintegrität gewahrt
+"Person",CBOR,Robust,Datenintegrität gewahrt
+"Person",YAML,Robust,Datenintegrität gewahrt
+"Person",BSON,Robust,Datenintegrität gewahrt
+"Person",TOML,Robust,Datenintegrität gewahrt
+"Person",INI,Robust,Datenintegrität gewahrt
+"Person",RDF (Turtle),Robust,Datenintegrität gewahrt
+"Person",Avro,Robust,Datenintegrität gewahrt
+"Person",Protobuf,Robust,"'null' wird zu leerem String"
+"Person",Thrift,Robust,Datenintegrität gewahrt
+"PersonAdvanced",JSON,Robust,Prozess erfolgreich durchlaufen
+"PersonAdvanced",XML,Robust,Prozess erfolgreich durchlaufen
+"PersonAdvanced",CSV,Fehlerhaft,IllegalArgumentException
+"PersonAdvanced",MessagePack,Robust,Prozess erfolgreich durchlaufen
+"PersonAdvanced",CBOR,Robust,Prozess erfolgreich durchlaufen
+"PersonAdvanced",YAML,Robust,Prozess erfolgreich durchlaufen
+"PersonAdvanced",BSON,Robust,Prozess erfolgreich durchlaufen
+"PersonAdvanced",TOML,Fehlerhaft,InaccessibleObjectException
+"DataSeries (Problematic Values)",JSON,Robust,Datenintegrität gewahrt
+"DataSeries (Problematic Values)",XML,Robust,Datenintegrität gewahrt
+"DataSeries (Problematic Values)",MessagePack,Robust,Datenintegrität gewahrt
+"DataSeries (Problematic Values)",CBOR,Robust,Datenintegrität gewahrt
+"DataSeries (Problematic Values)",YAML,Robust,Datenintegrität gewahrt
+"DataSeries (Problematic Values)",BSON,Robust,Datenintegrität gewahrt
+"DataSeries (Problematic Values)",TOML,Fehlerhaft,IllegalStateException
+"DataSeries (Problematic Values)",Avro,Fehlerhaft,AvroRuntimeException
+"DataSeries (Problematic Values)",Protobuf,Fehlerhaft,NullPointerException
+"DataSeries (Problematic Values)",CSV,"Nicht Robust","unit mismatch (expected null)"
+"DataSeries (Problematic Values)",INI,Robust,Datenintegrität gewahrt
+"Rekursiv (Problematic Values)",JSON,Robust,Datenintegrität gewahrt
+"Rekursiv (Problematic Values)",XML,Robust,Datenintegrität gewahrt
+"Rekursiv (Problematic Values)",MessagePack,Robust,Datenintegrität gewahrt
+"Rekursiv (Problematic Values)",CBOR,Robust,Datenintegrität gewahrt
+"Rekursiv (Problematic Values)",YAML,Robust,Datenintegrität gewahrt
+"Rekursiv (Problematic Values)",BSON,Robust,Datenintegrität gewahrt
+"Rekursiv (Problematic Values)",TOML,Fehlerhaft,InaccessibleObjectException
+"Rekursiv (Problematic Values)",Avro,Fehlerhaft,"AvroRuntimeException: Feld akzeptiert kein null"
+"Rekursiv (Problematic Values)",Protobuf,"Nicht Robust",Daten verändert
+"Rekursiv (Cyclic Dependency)",JSON,Robust (erwarteter Fehler),JsonMappingException
+"Rekursiv (Cyclic Dependency)",XML,Robust (erwarteter Fehler),MarshalException
+"Rekursiv (Cyclic Dependency)",MessagePack,Robust (erwarteter Fehler),JsonMappingException
+"Rekursiv (Cyclic Dependency)",CBOR,Robust (erwarteter Fehler),JsonMappingException
+"Rekursiv (Cyclic Dependency)",YAML,Robust (erwarteter Fehler),JsonMappingException
+"Rekursiv (Cyclic Dependency)",BSON,Robust (erwarteter Fehler),JsonMappingException
+"Rekursiv (Cyclic Dependency)",TOML,Robust (erwarteter Fehler),InaccessibleObjectException
+"Rekursiv (Cyclic Dependency)",Avro,Fehlerhaft (Absturz),StackOverflowError
+"Rekursiv (Cyclic Dependency)",Protobuf,Fehlerhaft (Absturz),StackOverflowError
+"Dokument (Problematic Values)",JSON,Robust,Datenintegrität gewahrt
+"Dokument (Problematic Values)",XML,Robust,Datenintegrität gewahrt
+"Dokument (Problematic Values)",MessagePack,Robust,Datenintegrität gewahrt
+"Dokument (Problematic Values)",CBOR,Robust,Datenintegrität gewahrt
+"Dokument (Problematic Values)",YAML,Robust,Datenintegrität gewahrt
+"Dokument (Problematic Values)",BSON,Robust,Datenintegrität gewahrt
+"Dokument (Problematic Values)",TOML,Robust,Datenintegrität gewahrt
+"Dokument (Problematic Values)",Avro,Robust,Datenintegrität gewahrt
+"Dokument (Problematic Values)",Protobuf,"Nicht Robust",Daten verändert

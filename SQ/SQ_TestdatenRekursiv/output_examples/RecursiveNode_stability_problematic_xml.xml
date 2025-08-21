@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<node>
+    <id>1000</id>
+    <name>Root &lt;'"&amp;&gt;</name>
+    <subordinates>
+        <node>
+            <id>1001</id>
+            <name>Child</name>
+            <role>Role</role>
+            <joinedDate>2025-08-05</joinedDate>
+            <subordinates/>
+        </node>
+    </subordinates>
+</node>

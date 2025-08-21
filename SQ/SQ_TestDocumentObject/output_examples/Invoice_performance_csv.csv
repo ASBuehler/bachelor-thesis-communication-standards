@@ -1,0 +1,16 @@
+invoiceNumber,issueDate,dueDate,billingStreet,billingCity,lineProductId,lineDescription,lineQuantity,lineUnitPrice,lineTotal
+INV-2025-001,2025-08-05,2025-08-19,Musterstrasse 123,Musterstadt,PROD-1000,Produkt 1 mit einer Beschreibung.,7,29.85,208.95
+INV-2025-001,2025-08-05,2025-08-19,Musterstrasse 123,Musterstadt,PROD-1001,Produkt 2 mit einer Beschreibung.,4,100.44,401.76
+INV-2025-001,2025-08-05,2025-08-19,Musterstrasse 123,Musterstadt,PROD-1002,Produkt 3 mit einer Beschreibung.,5,89.91,449.55
+INV-2025-001,2025-08-05,2025-08-19,Musterstrasse 123,Musterstadt,PROD-1003,Produkt 4 mit einer Beschreibung.,8,95.15,761.20
+INV-2025-001,2025-08-05,2025-08-19,Musterstrasse 123,Musterstadt,PROD-1004,Produkt 5 mit einer Beschreibung.,10,89.76,897.60
+INV-2025-001,2025-08-05,2025-08-19,Musterstrasse 123,Musterstadt,PROD-1005,Produkt 6 mit einer Beschreibung.,2,14.90,29.80
+INV-2025-001,2025-08-05,2025-08-19,Musterstrasse 123,Musterstadt,PROD-1006,Produkt 7 mit einer Beschreibung.,4,85.04,340.16
+INV-2025-001,2025-08-05,2025-08-19,Musterstrasse 123,Musterstadt,PROD-1007,Produkt 8 mit einer Beschreibung.,9,16.95,152.55
+INV-2025-001,2025-08-05,2025-08-19,Musterstrasse 123,Musterstadt,PROD-1008,Produkt 9 mit einer Beschreibung.,5,18.77,93.85
+INV-2025-001,2025-08-05,2025-08-19,Musterstrasse 123,Musterstadt,PROD-1009,Produkt 10 mit einer Beschreibung.,6,106.04,636.24
+INV-2025-001,2025-08-05,2025-08-19,Musterstrasse 123,Musterstadt,PROD-1010,Produkt 11 mit einer Beschreibung.,2,101.63,203.26
+INV-2025-001,2025-08-05,2025-08-19,Musterstrasse 123,Musterstadt,PROD-1011,Produkt 12 mit einer Beschreibung.,5,104.83,524.15
+INV-2025-001,2025-08-05,2025-08-19,Musterstrasse 123,Musterstadt,PROD-1012,Produkt 13 mit einer Beschreibung.,7,38.97,272.79
+INV-2025-001,2025-08-05,2025-08-19,Musterstrasse 123,Musterstadt,PROD-1013,Produkt 14 mit einer Beschreibung.,6,88.70,532.20
+INV-2025-001,2025-08-05,2025-08-19,Musterstrasse 123,Musterstadt,PROD-1014,Produkt 15 mit einer Beschreibung.,10,13.88,138.80

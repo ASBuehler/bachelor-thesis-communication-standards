@@ -1,0 +1,25 @@
+{
+  "namespace": "sqtest.avro",
+  "type": "record",
+  "name": "OrganizationalChartNode",
+  "fields": [
+    { "name": "id", "type": "long" },
+    { "name": "name", "type": "string" },
+    { "name": "role", "type": "string" },
+    {
+      "name": "joinedDate",
+      "type": { "type": "int", "logicalType": "date" }
+    },
+    {
+      "name": "metadata",
+      "type": { "type": "map", "values": "string" }
+    },
+    {
+      "name": "subordinates",
+      "type": {
+        "type": "array",
+        "items": "sqtest.avro.OrganizationalChartNode"
+      }
+    }
+  ]
+}

@@ -1,0 +1,123 @@
+Testfall,Datenformat,Groesse_Bytes,Serialisierungszeit_ns,Deserialisierungszeit_ns,CPU_Zeit_s,Status
+"Person (10k Durchläufe)",JSON,63,1272,2199,0.1094,Erfolgreich
+"Person (10k Durchläufe)",XML,145,130225,190418,6.7813,Erfolgreich
+"Person (10k Durchläufe)",CSV,36,2795,529,0.1094,Erfolgreich
+"Person (10k Durchläufe)",MessagePack,51,1798,2420,0.2188,Erfolgreich
+"Person (10k Durchläufe)",CBOR,53,1328,1873,0.1094,Erfolgreich
+"Person (10k Durchläufe)",YAML,63,4188,8407,0.5156,Erfolgreich
+"Person (10k Durchläufe)",Avro,36,1086,1928,0.1406,Erfolgreich
+"Person (10k Durchläufe)",Thrift,"[FEHLER: 1024]",424,398,"[FEHLER: 0.0000]",Erfolgreich
+"Person (10k Durchläufe)",Protobuf,38,475,333,0.0781,Erfolgreich
+"Person (10k Durchläufe)",BSON,69,2001,2426,0.2031,Erfolgreich
+"Person (10k Durchläufe)",TOML,62,4910,5848,0.5000,Erfolgreich
+"Person (10k Durchläufe)",INI,73,13793,26095,1.1406,Erfolgreich
+"Person (10k Durchläufe)",RDF (Turtle),268,26488,52927,3.3281,Erfolgreich
+"Person (100k Durchläufe)",JSON,63,835,1462,0.8750,Erfolgreich
+"Person (100k Durchläufe)",XML,145,124977,176615,37.6094,Erfolgreich
+"Person (100k Durchläufe)",CSV,36,644,494,0.5469,Erfolgreich
+"Person (100k Durchläufe)",MessagePack,51,1239,1594,1.2969,Erfolgreich
+"Person (100k Durchläufe)",CBOR,53,611,863,0.7031,Erfolgreich
+"Person (100k Durchläufe)",YAML,63,2713,5707,2.5000,Erfolgreich
+"Person (100k Durchläufe)",Avro,36,556,862,0.5781,Erfolgreich
+"Person (100k Durchläufe)",Thrift,"[FEHLER: 1024]",390,254,0.2031,Erfolgreich
+"Person (100k Durchläufe)",Protobuf,38,227,175,0.1875,Erfolgreich
+"Person (100k Durchläufe)",BSON,69,980,1155,0.7500,Erfolgreich
+"Person (100k Durchläufe)",TOML,62,2517,2714,1.7188,Erfolgreich
+"Person (100k Durchläufe)",INI,73,12404,24397,3.9219,Erfolgreich
+"Person (100k Durchläufe)",RDF (Turtle),268,17964,38167,9.6563,Erfolgreich
+"PersonAdvanced (10k Durchläufe)",JSON,2368,6099,8335,0.6094,Erfolgreich
+"PersonAdvanced (10k Durchläufe)",XML,2764,19677,99595,5.0313,Erfolgreich
+"PersonAdvanced (10k Durchläufe)",CSV,,,,Fehlerhaft
+"PersonAdvanced (10k Durchläufe)",MessagePack,2368,4981,7126,0.7344,Erfolgreich
+"PersonAdvanced (10k Durchläufe)",CBOR,2368,3767,6173,0.4375,Erfolgreich
+"PersonAdvanced (10k Durchläufe)",YAML,2368,3418,5359,0.4063,Erfolgreich
+"PersonAdvanced (10k Durchläufe)",BSON,2368,2826,4439,0.2031,Erfolgreich
+"PersonAdvanced (10k Durchläufe)",TOML,,,,Fehlerhaft
+"PersonAdvanced (100k Durchläufe)",JSON,2368,2648,3740,0.6406,Erfolgreich
+"PersonAdvanced (100k Durchläufe)",XML,2764,13786,45319,8.9844,Erfolgreich
+"PersonAdvanced (100k Durchläufe)",CSV,,,,Fehlerhaft
+"PersonAdvanced (100k Durchläufe)",MessagePack,2368,2645,3883,0.6719,Erfolgreich
+"PersonAdvanced (100k Durchläufe)",CBOR,2368,2631,3817,0.7813,Erfolgreich
+"PersonAdvanced (100k Durchläufe)",YAML,2368,2514,4205,0.7813,Erfolgreich
+"PersonAdvanced (100k Durchläufe)",BSON,2368,2520,3631,0.6094,Erfolgreich
+"PersonAdvanced (100k Durchläufe)",TOML,,,,Fehlerhaft
+"DataSeries (10k Punkte, 10k Läufe)",JSON,186413,1171848,3168282,44.1875,Erfolgreich
+"DataSeries (10k Punkte, 10k Läufe)",XML,346506,4654165,9999014,154.4688,Erfolgreich
+"DataSeries (10k Punkte, 10k Läufe)",MessagePack,186413,1582871,4184477,57.7031,Erfolgreich
+"DataSeries (10k Punkte, 10k Läufe)",CBOR,186413,1584917,4187398,57.6875,Erfolgreich
+"DataSeries (10k Punkte, 10k Läufe)",YAML,186413,1574251,4162101,57.5000,Erfolgreich
+"DataSeries (10k Punkte, 10k Läufe)",BSON,186413,1572970,4157444,57.0156,Erfolgreich
+"DataSeries (10k Punkte, 10k Läufe)",TOML,196411,3469472,121758590,1303.8594,Erfolgreich
+"DataSeries (10k Punkte, 10k Läufe)",Avro,80036,282689,679918,10.7031,Erfolgreich
+"DataSeries (10k Punkte, 10k Läufe)",Protobuf,80039,268674,137388,4.7188,Erfolgreich
+"DataSeries (100 Punkte, 50k Läufe)",JSON,1953,9746,29536,3.2656,Erfolgreich
+"DataSeries (100 Punkte, 50k Läufe)",XML,3646,31909,120805,16.2031,Erfolgreich
+"DataSeries (100 Punkte, 50k Läufe)",MessagePack,1953,9864,25312,2.0781,Erfolgreich
+"DataSeries (100 Punkte, 50k Läufe)",CBOR,1953,10057,25966,1.8281,Erfolgreich
+"DataSeries (100 Punkte, 50k Läufe)",YAML,1953,9475,24266,1.6875,Erfolgreich
+"DataSeries (100 Punkte, 50k Läufe)",BSON,1953,9707,24843,1.6875,Erfolgreich
+"DataSeries (100 Punkte, 50k Läufe)",TOML,2051,22970,77125,7.9063,Erfolgreich
+"DataSeries (100 Punkte, 50k Läufe)",Avro,835,2225,7888,1.7344,Erfolgreich
+"DataSeries (100 Punkte, 50k Läufe)",Protobuf,838,2662,2892,1.2656,Erfolgreich
+"DataSeries (100 Punkte, 50k Läufe)",CSV,1901,9665,20971,1.9688,Erfolgreich
+"DataSeries (100 Punkte, 50k Läufe)",INI,1972,36729,52264,5.2188,Erfolgreich
+"DataSeries (250k Punkte, 1k Läufe)",JSON,4656522,16429448,46238570,62.4531,Erfolgreich
+"DataSeries (250k Punkte, 1k Läufe)",XML,8656615,53070069,115005505,167.7969,Erfolgreich
+"DataSeries (250k Punkte, 1k Läufe)",MessagePack,4656522,16316611,45384251,61.2813,Erfolgreich
+"DataSeries (250k Punkte, 1k Läufe)",CBOR,4656522,16407297,45644908,61.6875,Erfolgreich
+"DataSeries (250k Punkte, 1k Läufe)",YAML,4656522,16195097,45190408,60.9375,Erfolgreich
+"DataSeries (250k Punkte, 1k Läufe)",BSON,4656522,16216413,45150489,60.9531,Erfolgreich
+"DataSeries (250k Punkte, 1k Läufe)",TOML,4906520,41706855,54017211888,56389.1094,Erfolgreich
+"DataSeries (250k Punkte, 1k Läufe)",Avro,2000036,6060741,12050011,31.7656,Erfolgreich
+"DataSeries (250k Punkte, 1k Läufe)",Protobuf,2000039,6388014,3949432,27.9531,Erfolgreich
+"DataSeries (250k Punkte, 1k Läufe)",CSV,4656470,31269604,61831615,160.9844,Erfolgreich
+"DataSeries (250k Punkte, 1k Läufe)",INI,4656541,49273407,71734104,200.4844,Erfolgreich
+"Rekursiv (Tiefe 3, Breite 20)",JSON,47902,106377,283092,0.8438,Erfolgreich
+"Rekursiv (Tiefe 3, Breite 20)",XML,111259,1056130,2316096,11.3906,Erfolgreich
+"Rekursiv (Tiefe 3, Breite 20)",MessagePack,47902,97059,200812,0.3750,Erfolgreich
+"Rekursiv (Tiefe 3, Breite 20)",CBOR,47902,105024,202734,0.3281,Erfolgreich
+"Rekursiv (Tiefe 3, Breite 20)",YAML,47902,98318,189846,0.4531,Erfolgreich
+"Rekursiv (Tiefe 3, Breite 20)",BSON,47902,111292,212312,0.3281,Erfolgreich
+"Rekursiv (Tiefe 3, Breite 20)",TOML,,,,Fehlerhaft
+"Rekursiv (Tiefe 3, Breite 20)",Avro,14726,94041,386655,1.7031,Erfolgreich
+"Rekursiv (Tiefe 3, Breite 20)",Protobuf,19716,167423,163371,1.0625,Erfolgreich
+"Rekursiv (Tiefe 3, Breite 20)",CSV,,,,Fehlerhaft
+"Rekursiv (Tiefe 3, Breite 20)",INI,,,,Fehlerhaft
+"Rekursiv (Tiefe 9, Breite 2)",JSON,57418,134900,334557,0.9375,Erfolgreich
+"Rekursiv (Tiefe 9, Breite 2)",XML,119967,1138949,2482999,11.9219,Erfolgreich
+"Rekursiv (Tiefe 9, Breite 2)",MessagePack,57418,132720,260163,0.5469,Erfolgreich
+"Rekursiv (Tiefe 9, Breite 2)",CBOR,57418,127364,229727,0.3750,Erfolgreich
+"Rekursiv (Tiefe 9, Breite 2)",YAML,57418,127545,236856,0.5156,Erfolgreich
+"Rekursiv (Tiefe 9, Breite 2)",BSON,57418,127058,235514,0.3750,Erfolgreich
+"Rekursiv (Tiefe 9, Breite 2)",TOML,,,,Fehlerhaft
+"Rekursiv (Tiefe 9, Breite 2)",Avro,17600,120396,419230,1.6563,Erfolgreich
+"Rekursiv (Tiefe 9, Breite 2)",Protobuf,23670,219404,215395,1.1563,Erfolgreich
+"Rekursiv (Tiefe 9, Breite 2)",CSV,,,,Fehlerhaft
+"Rekursiv (Tiefe 9, Breite 2)",INI,,,,Fehlerhaft
+"Dokument (3 Positionen, 5k Läufe)",JSON,2167,9234,36579,0.9375,Erfolgreich
+"Dokument (3 Positionen, 5k Läufe)",XML,2886,454595,692347,19.5781,Erfolgreich
+"Dokument (3 Positionen, 5k Läufe)",MessagePack,2167,11401,24087,0.7031,Erfolgreich
+"Dokument (3 Positionen, 5k Läufe)",CBOR,2167,8674,15379,0.5469,Erfolgreich
+"Dokument (3 Positionen, 5k Läufe)",YAML,2167,8336,17746,0.4063,Erfolgreich
+"Dokument (3 Positionen, 5k Läufe)",BSON,2167,7360,14492,0.4219,Erfolgreich
+"Dokument (3 Positionen, 5k Läufe)",TOML,2210,127957,117388,4.2500,Erfolgreich
+"Dokument (3 Positionen, 5k Läufe)",Avro,1440,14194,38873,1.2969,Erfolgreich
+"Dokument (3 Positionen, 5k Läufe)",Protobuf,1463,11867,15558,0.4688,Erfolgreich
+"Dokument (200 Positionen, 1k Läufe)",JSON,27293,72831,199407,1.0156,Erfolgreich
+"Dokument (200 Positionen, 1k Läufe)",XML,55789,841613,1583138,10.0781,Erfolgreich
+"Dokument (200 Positionen, 1k Läufe)",MessagePack,27293,55568,94242,0.3125,Erfolgreich
+"Dokument (200 Positionen, 1k Läufe)",CBOR,27293,63390,101120,0.2188,Erfolgreich
+"Dokument (200 Positionen, 1k Läufe)",YAML,27293,57424,88029,0.3125,Erfolgreich
+"Dokument (200 Positionen, 1k Läufe)",BSON,27293,56159,93902,0.3438,Erfolgreich
+"Dokument (200 Positionen, 1k Läufe)",TOML,30685,877443,2533518,4.9219,Erfolgreich
+"Dokument (200 Positionen, 1k Läufe)",Avro,13936,80127,267398,1.5469,Erfolgreich
+"Dokument (200 Positionen, 1k Läufe)",Protobuf,14549,79213,80276,0.7031,Erfolgreich
+"Dokument (15 Positionen, 2k Läufe)",JSON,3689,32217,68055,0.7813,Erfolgreich
+"Dokument (15 Positionen, 2k Läufe)",XML,6100,641343,970598,13.6719,Erfolgreich
+"Dokument (15 Positionen, 2k Läufe)",MessagePack,3689,12803,25745,0.3438,Erfolgreich
+"Dokument (15 Positionen, 2k Läufe)",CBOR,3689,10710,21863,0.1250,Erfolgreich
+"Dokument (15 Positionen, 2k Läufe)",YAML,3689,10340,16166,0.1875,Erfolgreich
+"Dokument (15 Positionen, 2k Läufe)",BSON,3689,9428,15240,0.2031,Erfolgreich
+"Dokument (15 Positionen, 2k Läufe)",TOML,3936,137449,190828,2.8750,Erfolgreich
+"Dokument (15 Positionen, 2k Läufe)",Avro,2193,27531,66935,0.7500,Erfolgreich
+"Dokument (15 Positionen, 2k Läufe)",Protobuf,2252,24246,18933,0.3750,Erfolgreich

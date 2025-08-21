@@ -1,0 +1,1 @@
+{"invoiceNumber":null,"issueDate":[2025,8,5],"dueDate":null,"billingAddress":{"street":"Test Str","city":null,"postalCode":"12345","country":null},"lineItems":[],"subtotal":null,"tax":null,"total":null,"status":null,"notes":"Notes with\nLine Breaks and € Symbol.","companyLogo":""}

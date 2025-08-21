@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package sqtest.proto;
+
+option java_package = "sqtest.proto";
+option java_outer_classname = "OrganizationalChartNodeProto";
+
+// Imports werden nicht benötigt und wurden entfernt.
+
+message OrganizationalChartNode {
+  int64 id = 1;
+  string name = 2;
+  string role = 3;
+  // LocalDate wird einfach als String im Format "YYYY-MM-DD" abgebildet. Kein Import nötig.
+  string joined_date = 4; 
+  // Eine map von string zu string benötigt keinen speziellen Import.
+  map<string, string> metadata = 5;
+  // Die rekursive Referenz auf sich selbst ist in Protobuf direkt möglich.
+  repeated OrganizationalChartNode subordinates = 6;
+}

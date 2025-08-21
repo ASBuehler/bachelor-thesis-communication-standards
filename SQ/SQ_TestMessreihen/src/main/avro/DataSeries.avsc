@@ -1,0 +1,12 @@
+{
+  "namespace": "sqtest.avro",
+  "type": "record",
+  "name": "DataSeries",
+  "fields": [
+    { "name": "sensorId", "type": ["null", "string"], "default": null },
+    { "name": "startTimestamp", "type": "long" },
+    // GEÄNDERT: "unit" kann jetzt string oder null sein.
+    { "name": "unit", "type": ["null", "string"], "default": null },
+    { "name": "values", "type": { "type": "array", "items": "double" } }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "namespace": "sqtest.avro",
+  "type": "record",
+  "name": "Invoice",
+  "fields": [
+    { "name": "invoiceNumber", "type": ["null", "string"], "default": null },
+    { "name": "issueDate", "type": ["null", { "type": "int", "logicalType": "date" }], "default": null },
+    { "name": "dueDate", "type": ["null", { "type": "int", "logicalType": "date" }], "default": null },
+    { "name": "billingAddress", "type": ["null", {
+      "type": "record",
+      "name": "Address",
+      "fields": [
+        { "name": "street", "type": ["null", "string"], "default": null },
+        { "name": "city", "type": ["null", "string"], "default": null },
+        { "name": "postalCode", "type": ["null", "string"], "default": null },
+        { "name": "country", "type": ["null", "string"], "default": null }
+      ]
+    }], "default": null },
+    { "name": "lineItems", "type": {
+      "type": "array",
+      "items": {
+        "type": "record",
+        "name": "InvoiceLineItem",
+        "fields": [
+          { "name": "productId", "type": ["null", "string"], "default": null },
+          { "name": "description", "type": ["null", "string"], "default": null },
+          { "name": "quantity", "type": "int" },
+          { "name": "unitPrice", "type": ["null", "string"], "doc": "BigDecimal als String" },
+          { "name": "lineTotal", "type": ["null", "string"], "doc": "BigDecimal als String" }
+        ]
+      }
+    }},
+    { "name": "subtotal", "type": ["null", "string"], "doc": "BigDecimal als String" },
+    { "name": "tax", "type": ["null", "string"], "doc": "BigDecimal als String" },
+    { "name": "total", "type": ["null", "string"], "doc": "BigDecimal als String" },
+    { "name": "status", "type": ["null", { "type": "enum", "name": "PaymentStatus", "symbols": ["DRAFT", "SENT", "PAID", "OVERDUE", "VOID"] }], "default": null },
+    { "name": "notes", "type": ["null", "string"], "default": null },
+    { "name": "companyLogo", "type": ["null", "bytes"], "default": null }
+  ]
+}

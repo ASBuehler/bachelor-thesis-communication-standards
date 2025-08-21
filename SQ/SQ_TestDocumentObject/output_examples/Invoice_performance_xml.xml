@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<invoice>
+    <invoiceNumber>INV-2025-001</invoiceNumber>
+    <issueDate>2025-08-05</issueDate>
+    <dueDate>2025-08-19</dueDate>
+    <billingAddress>
+        <city>Musterstadt</city>
+        <country>Deutschland</country>
+        <postalCode>12345</postalCode>
+        <street>Musterstrasse 123</street>
+    </billingAddress>
+    <lineItems>
+        <item>
+            <productId>PROD-1000</productId>
+            <description>Produkt 1 mit einer Beschreibung.</description>
+            <quantity>7</quantity>
+            <unitPrice>29.85</unitPrice>
+            <lineTotal>208.95</lineTotal>
+        </item>
+        <item>
+            <productId>PROD-1001</productId>
+            <description>Produkt 2 mit einer Beschreibung.</description>
+            <quantity>4</quantity>
+            <unitPrice>100.44</unitPrice>
+            <lineTotal>401.76</lineTotal>
+        </item>
+        <item>
+            <productId>PROD-1002</productId>
+            <description>Produkt 3 mit einer Beschreibung.</description>
+            <quantity>5</quantity>
+            <unitPrice>89.91</unitPrice>
+            <lineTotal>449.55</lineTotal>
+        </item>
+        <item>
+            <productId>PROD-1003</productId>
+            <description>Produkt 4 mit einer Beschreibung.</description>
+            <quantity>8</quantity>
+            <unitPrice>95.15</unitPrice>
+            <lineTotal>761.20</lineTotal>
+        </item>
+        <item>
+            <productId>PROD-1004</productId>
+            <description>Produkt 5 mit einer Beschreibung.</description>
+            <quantity>10</quantity>
+            <unitPrice>89.76</unitPrice>
+            <lineTotal>897.60</lineTotal>
+        </item>
+        <item>
+            <productId>PROD-1005</productId>
+            <description>Produkt 6 mit einer Beschreibung.</description>
+            <quantity>2</quantity>
+            <unitPrice>14.90</unitPrice>
+            <lineTotal>29.80</lineTotal>
+        </item>
+        <item>
+            <productId>PROD-1006</productId>
+            <description>Produkt 7 mit einer Beschreibung.</description>
+            <quantity>4</quantity>
+            <unitPrice>85.04</unitPrice>
+            <lineTotal>340.16</lineTotal>
+        </item>
+        <item>
+            <productId>PROD-1007</productId>
+            <description>Produkt 8 mit einer Beschreibung.</description>
+            <quantity>9</quantity>
+            <unitPrice>16.95</unitPrice>
+            <lineTotal>152.55</lineTotal>
+        </item>
+        <item>
+            <productId>PROD-1008</productId>
+            <description>Produkt 9 mit einer Beschreibung.</description>
+            <quantity>5</quantity>
+            <unitPrice>18.77</unitPrice>
+            <lineTotal>93.85</lineTotal>
+        </item>
+        <item>
+            <productId>PROD-1009</productId>
+            <description>Produkt 10 mit einer Beschreibung.</description>
+            <quantity>6</quantity>
+            <unitPrice>106.04</unitPrice>
+            <lineTotal>636.24</lineTotal>
+        </item>
+        <item>
+            <productId>PROD-1010</productId>
+            <description>Produkt 11 mit einer Beschreibung.</description>
+            <quantity>2</quantity>
+            <unitPrice>101.63</unitPrice>
+            <lineTotal>203.26</lineTotal>
+        </item>
+        <item>
+            <productId>PROD-1011</productId>
+            <description>Produkt 12 mit einer Beschreibung.</description>
+            <quantity>5</quantity>
+            <unitPrice>104.83</unitPrice>
+            <lineTotal>524.15</lineTotal>
+        </item>
+        <item>
+            <productId>PROD-1012</productId>
+            <description>Produkt 13 mit einer Beschreibung.</description>
+            <quantity>7</quantity>
+            <unitPrice>38.97</unitPrice>
+            <lineTotal>272.79</lineTotal>
+        </item>
+        <item>
+            <productId>PROD-1013</productId>
+            <description>Produkt 14 mit einer Beschreibung.</description>
+            <quantity>6</quantity>
+            <unitPrice>88.70</unitPrice>
+            <lineTotal>532.20</lineTotal>
+        </item>
+        <item>
+            <productId>PROD-1014</productId>
+            <description>Produkt 15 mit einer Beschreibung.</description>
+            <quantity>10</quantity>
+            <unitPrice>13.88</unitPrice>
+            <lineTotal>138.80</lineTotal>
+        </item>
+    </lineItems>
+    <subtotal>5642.86</subtotal>
+    <tax>1072.1434</tax>
+    <total>6715.0034</total>
+    <status>DRAFT</status>
+    <notes>Vielen Dank für Ihren Einkauf.
+Bitte überweisen Sie den Betrag innerhalb von 14 Tagen.
+Sonderzeichen: äöüß'"&lt;&gt;&amp;</notes>
+    <companyLogo>kJ4RtXmmjz+rcxqT7csuwcg4aPAnuoziS/yHKGdfuwhTx3s/U2zjlM48VyjbvUCHipdf8zy6CKtl06M4k7Akbr4AbUqZnFrC0UbfdH/sBjOxQEeEAh3FkfL5ggU0wMzrSCvcdI7d2DCeRLXlOB6rhX2hk2e89s+4tMXmF3yHUIaaA4uwlk9o43BCKu0pmmQYoxLZLRPUSID/plrMn0ir2xP1qbm9LRmlVvxHa7n8dRnLUsqek+LJpD5nXRZWK+3nR7wzLy/+BIqzhL8vFRxhhhLRm8YrqZ3Vb7cDz1/peOp82SqdwVJXDsA6loOp/AJuiceVn7FQw5miDu7m+oqaryvTIgVnGX7YCRELdqvViam0Jd8AXHwDeX3YqzRtM4lqhUi/1Lx84+XsI27dkCV3pwtLy9JIspcEu/Pl4YL9Jfzs0xLFfVTTsx2g5JmV1h9YfJE0iPZTJomogOqqBOgJ+3W9B9EOJm7IJflSrTdzXAfnp62DySYV6qf/cz1F0rQRbX08TPO0y9neb+cou2pb86G8k16JbHRkrL/FBJuI70/RDv4mWCOvs/no/sWnZce88ndL/+SLBL7DnHea3+Cy3NQRSpeKom7meBNePUeqs2CXxjIL6EgYs4cOi+Ts5iUOXb4Csnyz8Ds03/gUKZEASUB0EYiLjVVMq4ajoiYZhU2Gpr76Q/fg6VhDwqmhCSokE5YScCPCliN1H3zN8LQEVR5J3pOaj3565FQ+sEYusqEnxZCS7rVuhT6a9LQ0EwBGKHTRg18Ppm8rrdBDc+mZ5AopP1uMFxHL861POuAUCM5ad7Z3FPv4tVUgAeLHqZl5PFJ5AH99oT6XpXzdY5+iEZ8mvYZf2UQY3sMwXKUmDOOy5MMosv4qWr9OhpU0Kc1blaz3vIrTiwUVRXnftTS9WFQSyE7vWsI3FDiBlUxWlKEQLYOfBOZQJp6PsK9hqg4ufuVTCmezlJfVP5MwpqRSwZU3Mm/doAlw8MPKF1lUJW2DWynsL9Pk9lJy7gjGKGgF4Akjqk5415/YfRRfD/oPmiVPpsm9BznRcjjZli9afdpfousvL6XqR/Vq/0c8cho9HzOPLG+JO0su1h3e7O+i2bSiRXd/lTDlOTF7ulnHvsebnIYaBHQPNRM5e9kIzeA+NgJkd+HsL8VupRTBJ2zmo7yd+44gTxyIxBbxvBb9BaVxkFxCGRU03q9RVe0ogG3BFvCY0c0mkkJ2WwGxqcDLZ6FHT9GSXioe6ksdjSMkGsIx735K9TMoyXPoQBLdqZ1dO281Ltuw0h5lXPHXpN55+Alj0pTpFNjFmKLRkc3ImLJljoL6JcsloDZ0d2B5EFfKkRpqV92Vl9DW0J/MGuiTjg==</companyLogo>
+</invoice>

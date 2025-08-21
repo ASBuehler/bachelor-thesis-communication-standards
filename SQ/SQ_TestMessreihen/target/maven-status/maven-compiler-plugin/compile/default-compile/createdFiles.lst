@@ -1,0 +1,15 @@
+sqtest\proto\DataSeriesProto$DataSeries$Builder.class
+sqtest\proto\DataSeriesProto$DataSeries.class
+sqtest\XmlSerializer.class
+sqtest\RdfTurtleSerializer.class
+sqtest\proto\DataSeriesProto$DataSeriesOrBuilder.class
+sqtest\XmlDataSeries.class
+DataSeries.proto
+sqtest\avro\DataSeries.class
+sqtest\YamlSerializer.class
+sqtest\Serializer.class
+sqtest\proto\DataSeriesProto$DataSeries$1.class
+sqtest\proto\DataSeriesProto.class
+sqtest\thrift\DataSeries.class
+sqtest\avro\DataSeries$Builder.class
+sqtest\TomlSerializer.class

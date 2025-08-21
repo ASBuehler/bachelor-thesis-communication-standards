@@ -1,0 +1,46 @@
+syntax = "proto3";
+
+package sqtest.proto;
+
+option java_package = "sqtest.proto";
+option java_outer_classname = "InvoiceProto";
+
+message Invoice {
+  optional string invoice_number = 1;
+  // LocalDate wird als String im Format "YYYY-MM-DD" abgebildet.
+  optional string issue_date = 2;
+  optional string due_date = 3;
+  optional Address billing_address = 4;
+  repeated InvoiceLineItem line_items = 5;
+  // BigDecimal wird als String abgebildet, um Präzision zu gewährleisten.
+  optional string subtotal = 6;
+  optional string tax = 7;
+  optional string total = 8;
+  optional PaymentStatus status = 9;
+  optional string notes = 10;
+  optional bytes company_logo = 11;
+}
+
+message Address {
+  optional string street = 1;
+  optional string city = 2;
+  optional string postal_code = 3;
+  optional string country = 4;
+}
+
+message InvoiceLineItem {
+  optional string product_id = 1;
+  optional string description = 2;
+  int32 quantity = 3;
+  optional string unit_price = 4; // BigDecimal
+  optional string line_total = 5; // BigDecimal
+}
+
+enum PaymentStatus {
+  PAYMENT_STATUS_UNSPECIFIED = 0;
+  DRAFT = 1;
+  SENT = 2;
+  PAID = 3;
+  OVERDUE = 4;
+  VOID = 5;
+}

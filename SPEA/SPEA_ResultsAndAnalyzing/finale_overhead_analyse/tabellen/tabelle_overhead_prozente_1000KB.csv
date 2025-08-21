@@ -1,0 +1,7 @@
+Protokoll_Display,Prozent_ETH (L2),Prozent_IP (L3),Prozent_Transport (L4),Prozent_L5_L7,Gesamt_Overhead_Hinweg
+mqtt_qos1,20.79,29.70,47.83,1.69,2492.00
+mqtt_qos2,20.77,29.66,47.78,1.80,2562.00
+mqtt_qos,20.88,29.82,47.98,1.32,3040.00
+tcp,21.17,30.24,48.59,0.00,3792.00
+http,17.93,25.61,41.29,15.16,5153.33
+coap,21.21,30.31,0.00,48.48,129016.00
